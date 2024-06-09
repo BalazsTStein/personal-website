@@ -101,6 +101,16 @@
     <div class="container">
         <section id="about" class="section">
             <!-- Your existing content -->
+            <div id="login-modal" style="display: none;">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required><br><br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required><br><br>
+                    <button type="button" onclick="authenticate()">Login</button>
+                </form>
+            </div>
             <h2>About</h2>
             <img src="profile.jpg" alt="Stein Balazs" class="profile-pic">
             <p>
@@ -144,16 +154,7 @@
     </footer>
 
     <!-- Login form and authentication script -->
-    <div id="login-modal" style="display: none;">
-        <h2>Login</h2>
-        <form id="login-form">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required><br><br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required><br><br>
-            <button type="button" onclick="authenticate()">Login</button>
-        </form>
-    </div>
+  
 
     <script>
         function authenticate() {
