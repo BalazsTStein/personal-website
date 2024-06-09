@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,7 +50,7 @@
             color: #333; /* Darker color for section headings */
         }
         .section img {
-            max-width: 50%; /* About half the size */
+            max-width: 30%; /* About half the size */
             height: auto;
             border-radius: 50%;
             display: block;
@@ -58,7 +59,8 @@
         }
         .section video {
             display: block;
-            width: 100%;
+            width: 30%; /* About half the width of its container */
+            height: auto;
             border-radius: 10px;
             margin-top: 1rem;
         }
@@ -108,8 +110,39 @@
             <p>
                 Over the past 18 years, I have gained experience working with a diverse range of clients. Currently, I work for a weight management company, running psychology sessions for overweight individuals. In my free time, I enjoy sports activities, competitive wrestling, and running.
             </p>
-            <!-- Inserting the video -->
+            <!-- Inserting the first video -->
             <video controls>
-                <source src="video.mp4" type="video/mp4">
+                <source src="video1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
-            </
+            </video>
+            <!-- Inserting the second video -->
+            <video controls>
+                <source src="video2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+        <section id="portfolio" class="section">
+            <h2>Portfolio</h2>
+            <p>Details about your publications, projects, and case studies can go here.</p>
+        </section>
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/your-profile" target="_blank">Your LinkedIn Profile</a></p>
+            <p>Twitter: <a href="https://twitter.com/your-profile" target="_blank">@your-profile</a></p>
+        </section>
+        <section id="blog" class="section">
+            <h2>Blog</h2>
+            <p>Coming soon...</p>
+        </section>
+    </div>
+    <footer>
+        &copy; 2024 Stein Balazs. All rights reserved.
+    </footer>
+    <script>
+        window.onload = function() {
+            alert('Welcome to my personal webpage!');
+        };
+    </script>
+</body>
+</html>
