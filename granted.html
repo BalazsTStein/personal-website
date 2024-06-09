@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stein Balazs - UKCP Registered Psychotherapist</title>
     <style>
-        /* Your existing CSS styles here */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -91,7 +90,6 @@
         <h1>Stein Balazs</h1>
         <p>UKCP Registered Psychotherapist</p>
     </header>
-    <!-- Your existing navigation -->
     <nav>
         <a href="#about">About</a>
         <a href="#portfolio">Portfolio</a>
@@ -100,7 +98,6 @@
     </nav>
     <div class="container">
         <section id="about" class="section">
-            <!-- Your existing content -->
             <h2>About</h2>
             <img src="profile.jpg" alt="Stein Balazs" class="profile-pic">
             <p>
@@ -123,7 +120,6 @@
                 Your browser does not support the video tag.
             </video>
         </section>
-        <!-- Other sections of your webpage -->
         <section id="portfolio" class="section">
             <h2>Portfolio</h2>
             <p>Details about your publications, projects, and case studies can go here.</p>
@@ -142,35 +138,9 @@
     <footer>
         &copy; 2024 Stein Balazs. All rights reserved.
     </footer>
-
-    <!-- Login form and authentication script -->
-    <div id="login-modal" style="display: none;">
-        <h2>Login</h2>
-        <form id="login-form">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required><br><br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required><br><br>
-            <button type="button" onclick="authenticate()">Login</button>
-        </form>
-    </div>
-
     <script>
-        function authenticate() {
-            var username = document.getElementById("username").value;
-            var password = document.getElementById("password").value;
-
-            // Simple validation
-            if (username === "admin" && password === "password") {
-                window.location.href = "granted.html"; // Redirect to granted access page
-            } else {
-                alert("Access denied. Invalid credentials.");
-            }
-        }
-
-        // Show login modal on page load
         window.onload = function() {
-            document.getElementById("login-modal").style.display = "block";
+            alert('Welcome to my personal webpage!');
         };
     </script>
 </body>
